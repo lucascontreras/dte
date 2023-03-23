@@ -1,0 +1,31 @@
+{
+  "name": "dte",
+  "version": "1.0.0",
+  "description": "An app that allows the user to generate delivery orders and invoices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascontreras/dte.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucascontreras/dte/issues"
+  },
+  "homepage": "https://github.com/lucascontreras/dte#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.76.3",
+    "webpack-dev-server": "^4.13.1"
+  }
+}
