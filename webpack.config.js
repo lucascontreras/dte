@@ -2,20 +2,23 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './client/index.js',
   output: {
+    // needed this publicPath: 'dist';. publicPath and path are two different things!
+    //publicPath: 'dist',
     path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    clean: true, // delete old builds, allows fresh build
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './client/index.html'
     })
   ],
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',

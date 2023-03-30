@@ -4,7 +4,7 @@
   "description": "An app that allows the user to generate delivery orders and invoices",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "nodemon server/server.js & webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/lucascontreras/dte#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
